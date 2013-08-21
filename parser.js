@@ -89,6 +89,7 @@ function parse_functions(root)
 
 		var ret = $(this).find(".memTemplItemLeft, .memItemLeft").text();
 		ret = ret.replace("GLM_FUNC_QUALIFIER", "");
+		ret = ret.replace("GLM_FUNC_DECL", "");
 		ret = ret.replace(/< ([^>]+) >/g, "<$1>");
 		ret = ret.replace(/ \*/g, "*");
 		ret = ret.replace(/ &/g, "&");
@@ -109,11 +110,13 @@ function parse_functions(root)
 		if (name.length === 0)
 			name = $(this).find("b");
 
-		name = name.text().replace("glm::", "");
+		name = name.eq(0).text().replace("glm::", "");
 
-		var link = $(this).find("a.el").attr("href");
+		var link = $(this).find("a.el").eq(0).attr("href");
 
-		var params = $(this).find(".memTemplItemRight, .memItemRight")[0].childNodes[1].nodeValue;
+		var params = $(this).find(".memTemplItemRight, .memItemRight").clone();
+		params[0].removeChild(params[0].childNodes[0]);
+		params = params.text();
 		params = params.replace(/< ([^>]+) >/g, "<$1>");
 		params = params.replace(/typename /g, "");
 		params = params.replace(/detail::/g, "");
@@ -215,7 +218,7 @@ function generate_index(categories)
 				td2.append(params);
 
 				if (f.deprecated)
-					td2.append($("<span>").text("[deprecated]").addClass("deprecated"));
+					td2.append($("<span>").text(" [deprecated]").addClass("deprecated"));
 
 				tr.append(td, td2);
 				tableBody.append(tr);
