@@ -169,12 +169,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gacca7d201301551a24dbf7eef343a14c1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:gacca7d201301551a24dbf7eef343a14c1"><td class="memTemplItemLeft" align="right" valign="top">GLM_FUNC_QUALIFIER T const *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtc__type__ptr.html#gacca7d201301551a24dbf7eef343a14c1">glm::value_ptr</a> (detail::tmat4x3&lt; T &gt; const &amp;mat)</td></tr>
 <tr class="separator:gacca7d201301551a24dbf7eef343a14c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga348519eaf9bb56244727eabb314f6892"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga348519eaf9bb56244727eabb314f6892"><td class="memTemplItemLeft" align="right" valign="top">GLM_FUNC_QUALIFIER T const *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtc__type__ptr.html#ga348519eaf9bb56244727eabb314f6892">glm::value_ptr</a> (detail::tquat&lt; T &gt; const &amp;q)</td></tr>
-<tr class="separator:ga348519eaf9bb56244727eabb314f6892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae821d2d76715dfe8eb4a9c7eac845dc4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:gae821d2d76715dfe8eb4a9c7eac845dc4"><td class="memTemplItemLeft" align="right" valign="top">GLM_FUNC_QUALIFIER T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtc__type__ptr.html#gae821d2d76715dfe8eb4a9c7eac845dc4">glm::value_ptr</a> (detail::tmat4x3&lt; T &gt; &amp;mat)</td></tr>
 <tr class="separator:gae821d2d76715dfe8eb4a9c7eac845dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga348519eaf9bb56244727eabb314f6892"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga348519eaf9bb56244727eabb314f6892"><td class="memTemplItemLeft" align="right" valign="top">GLM_FUNC_QUALIFIER T const *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtc__type__ptr.html#ga348519eaf9bb56244727eabb314f6892">glm::value_ptr</a> (detail::tquat&lt; T &gt; const &amp;q)</td></tr>
+<tr class="separator:ga348519eaf9bb56244727eabb314f6892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga676d49ec85779af9d6b7b429772a39e2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga676d49ec85779af9d6b7b429772a39e2"><td class="memTemplItemLeft" align="right" valign="top">GLM_FUNC_QUALIFIER T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtc__type__ptr.html#ga676d49ec85779af9d6b7b429772a39e2">glm::value_ptr</a> (detail::tquat&lt; T &gt; &amp;q)</td></tr>
+<tr class="separator:ga676d49ec85779af9d6b7b429772a39e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Handles the interaction between pointers and vector, matrix types. </p>
@@ -989,26 +992,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga348519eaf9bb56244727eabb314f6892"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">GLM_FUNC_QUALIFIER T const* glm::value_ptr </td>
-          <td>(</td>
-          <td class="paramtype">detail::tquat&lt; T &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>q</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return the constant address to the data of the input parameter. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__gtc__type__ptr.html" title="Handles the interaction between pointers and vector, matrix types.">GLM_GTC_type_ptr</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="gae821d2d76715dfe8eb4a9c7eac845dc4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1029,10 +1012,50 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ga348519eaf9bb56244727eabb314f6892"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">GLM_FUNC_QUALIFIER T const* glm::value_ptr </td>
+          <td>(</td>
+          <td class="paramtype">detail::tquat&lt; T &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>q</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the constant address to the data of the input parameter. </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__gtc__type__ptr.html" title="Handles the interaction between pointers and vector, matrix types.">GLM_GTC_type_ptr</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga676d49ec85779af9d6b7b429772a39e2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">GLM_FUNC_QUALIFIER T* glm::value_ptr </td>
+          <td>(</td>
+          <td class="paramtype">detail::tquat&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>q</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the constant address to the data of the input parameter. </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__gtc__type__ptr.html" title="Handles the interaction between pointers and vector, matrix types.">GLM_GTC_type_ptr</a> </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 21 2013 10:46:25 for GLM by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 21 2013 11:28:18 for GLM by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

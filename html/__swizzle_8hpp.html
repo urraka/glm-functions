@@ -145,7 +145,7 @@ Enumerations</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>OpenGL Mathematics (glm.g-truc.net)</p>
-<p>Copyright (c) 2005 - 2012 G-Truc Creation (www.g-truc.net) Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>Copyright (c) 2005 - 2013 G-Truc Creation (www.g-truc.net) Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 <p><a class="el" href="group__core.html">GLM Core</a></p>
@@ -508,7 +508,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">_GLM_SWIZZLE_TEMPLATE1                                                          \</div>
-<div class="line">    typename _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a)  \</div>
+<div class="line">    GLM_FUNC_QUALIFIER <span class="keyword">typename</span> _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a)  \</div>
 <div class="line">    {                                                                               \</div>
 <div class="line">        return FUNCTION(a());                                                       \</div>
 <div class="line">    }</div>
@@ -539,22 +539,22 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">_GLM_SWIZZLE_TEMPLATE2                                                                                      \</div>
-<div class="line">    typename _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE2&amp; b) \</div>
+<div class="line">    GLM_FUNC_QUALIFIER <span class="keyword">typename</span> _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE2&amp; b) \</div>
 <div class="line">    {                                                                                                           \</div>
 <div class="line">        return FUNCTION(a(), b());                                                                              \</div>
 <div class="line">    }                                                                                                           \</div>
 <div class="line">    _GLM_SWIZZLE_TEMPLATE1                                                                                      \</div>
-<div class="line">    typename _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; b) \</div>
+<div class="line">    GLM_FUNC_QUALIFIER <span class="keyword">typename</span> _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; b) \</div>
 <div class="line">    {                                                                                                           \</div>
 <div class="line">        return FUNCTION(a(), b());                                                                              \</div>
 <div class="line">    }                                                                                                           \</div>
 <div class="line">    _GLM_SWIZZLE_TEMPLATE1                                                                                      \</div>
-<div class="line">    typename _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> <span class="keyword">typename</span> V&amp; b)         \</div>
+<div class="line">    GLM_FUNC_QUALIFIER <span class="keyword">typename</span> _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> <span class="keyword">typename</span> V&amp; b)         \</div>
 <div class="line">    {                                                                                                           \</div>
 <div class="line">        return FUNCTION(a(), b);                                                                                \</div>
 <div class="line">    }                                                                                                           \</div>
 <div class="line">    _GLM_SWIZZLE_TEMPLATE1                                                                                      \</div>
-<div class="line">    typename _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> V&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; b)                  \</div>
+<div class="line">    GLM_FUNC_QUALIFIER <span class="keyword">typename</span> _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> V&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; b)                  \</div>
 <div class="line">    {                                                                                                           \</div>
 <div class="line">        return FUNCTION(a, b());                                                                                \</div>
 <div class="line">    }</div>
@@ -585,22 +585,22 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">_GLM_SWIZZLE_TEMPLATE2                                                                                                    \</div>
-<div class="line">    typename _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE2&amp; b, <span class="keyword">const</span> T&amp; c)   \</div>
+<div class="line">    GLM_FUNC_QUALIFIER <span class="keyword">typename</span> _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE2&amp; b, <span class="keyword">const</span> T&amp; c)   \</div>
 <div class="line">    {                                                                                                                         \</div>
 <div class="line">        return FUNCTION(a(), b(), c);                                                                                         \</div>
 <div class="line">    }                                                                                                                         \</div>
 <div class="line">    _GLM_SWIZZLE_TEMPLATE1                                                                                                    \</div>
-<div class="line">    typename _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; b, <span class="keyword">const</span> T&amp; c)   \</div>
+<div class="line">    GLM_FUNC_QUALIFIER <span class="keyword">typename</span> _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; b, <span class="keyword">const</span> T&amp; c)   \</div>
 <div class="line">    {                                                                                                                         \</div>
 <div class="line">        return FUNCTION(a(), b(), c);                                                                                         \</div>
 <div class="line">    }                                                                                                                         \</div>
 <div class="line">    _GLM_SWIZZLE_TEMPLATE1                                                                                                    \</div>
-<div class="line">    typename _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> <span class="keyword">typename</span> S0::vec_type&amp; b, <span class="keyword">const</span> T&amp; c)\</div>
+<div class="line">    GLM_FUNC_QUALIFIER <span class="keyword">typename</span> _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> <span class="keyword">typename</span> S0::vec_type&amp; b, <span class="keyword">const</span> T&amp; c)\</div>
 <div class="line">    {                                                                                                                         \</div>
 <div class="line">        return FUNCTION(a(), b, c);                                                                                           \</div>
 <div class="line">    }                                                                                                                         \</div>
 <div class="line">    _GLM_SWIZZLE_TEMPLATE1                                                                                                    \</div>
-<div class="line">    typename _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> <span class="keyword">typename</span> V&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; b, <span class="keyword">const</span> T&amp; c)           \</div>
+<div class="line">    GLM_FUNC_QUALIFIER <span class="keyword">typename</span> _GLM_SWIZZLE_TYPE1::RETURN_TYPE FUNCTION(<span class="keyword">const</span> <span class="keyword">typename</span> V&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; b, <span class="keyword">const</span> T&amp; c)           \</div>
 <div class="line">    {                                                                                                                         \</div>
 <div class="line">        return FUNCTION(a, b(), c);                                                                                           \</div>
 <div class="line">    }</div>
@@ -621,12 +621,12 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">_GLM_SWIZZLE_TEMPLATE1                                                          \</div>
-<div class="line">    V <span class="keyword">operator</span> OPERAND ( <span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> T&amp; b)                   \</div>
+<div class="line">    GLM_FUNC_QUALIFIER V <span class="keyword">operator</span> OPERAND ( <span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> T&amp; b)                   \</div>
 <div class="line">    {                                                                               \</div>
 <div class="line">        return a() OPERAND b;                                                       \</div>
 <div class="line">    }                                                                               \</div>
 <div class="line">    _GLM_SWIZZLE_TEMPLATE1                                                          \</div>
-<div class="line">    V operator OPERAND ( const T&amp; a, const _GLM_SWIZZLE_TYPE1&amp; b)                   \</div>
+<div class="line">    GLM_FUNC_QUALIFIER V operator OPERAND ( const T&amp; a, const _GLM_SWIZZLE_TYPE1&amp; b)                   \</div>
 <div class="line">    {                                                                               \</div>
 <div class="line">        return a OPERAND b();                                                       \</div>
 <div class="line">    }</div>
@@ -647,17 +647,17 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">_GLM_SWIZZLE_TEMPLATE2                                                          \</div>
-<div class="line">    V <span class="keyword">operator</span> OPERAND ( <span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE2&amp; b)  \</div>
+<div class="line">    GLM_FUNC_QUALIFIER V <span class="keyword">operator</span> OPERAND ( <span class="keyword">const</span> _GLM_SWIZZLE_TYPE1&amp; a, <span class="keyword">const</span> _GLM_SWIZZLE_TYPE2&amp; b)  \</div>
 <div class="line">    {                                                                               \</div>
 <div class="line">        return a() OPERAND b();                                                     \</div>
 <div class="line">    }                                                                               \</div>
 <div class="line">    _GLM_SWIZZLE_TEMPLATE1                                                          \</div>
-<div class="line">    V operator OPERAND ( const _GLM_SWIZZLE_TYPE1&amp; a, const V&amp; b)                   \</div>
+<div class="line">    GLM_FUNC_QUALIFIER V operator OPERAND ( const _GLM_SWIZZLE_TYPE1&amp; a, const V&amp; b)                   \</div>
 <div class="line">    {                                                                               \</div>
 <div class="line">        return a() OPERAND b;                                                       \</div>
 <div class="line">    }                                                                               \</div>
 <div class="line">    _GLM_SWIZZLE_TEMPLATE1                                                          \</div>
-<div class="line">    V operator OPERAND ( const V&amp; a, const _GLM_SWIZZLE_TYPE1&amp; b)                   \</div>
+<div class="line">    GLM_FUNC_QUALIFIER V operator OPERAND ( const V&amp; a, const _GLM_SWIZZLE_TYPE1&amp; b)                   \</div>
 <div class="line">    {                                                                               \</div>
 <div class="line">        return a OPERAND b();                                                       \</div>
 <div class="line">    }</div>
@@ -667,7 +667,7 @@ Enumerations</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 21 2013 10:46:23 for GLM by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 21 2013 11:28:16 for GLM by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
