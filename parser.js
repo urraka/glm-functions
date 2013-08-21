@@ -153,7 +153,7 @@ function generate_index(categories)
 {
 	var elements = [];
 
-	elements.push($("<h1>").text("GLM Functions Reference"));
+	elements.push($("<h1>").text("GLM Function Reference"));
 
 	for (var i = 0; i < categories.length; i++)
 	{
